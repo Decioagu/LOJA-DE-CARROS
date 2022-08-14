@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Carros</title>
+    <style>
+    tbody{
+        text-align: center;
+    }    
+    </style>
+</head>
+<body>
+    <h1>Loja de Carros</h1>
+    <hr>
+
+    <label for="">Modelo: </label>
+    <input type="text" id="modelo" autofocus>
+    <br><br>
+
+    <label for="">Ano: </label>
+    <input type="number" id="ano">
+    <br><br>
+
+    <label for="">Preço: </label>
+    <input type="number" id="preco">
+    <br><br>
+
+    <label for="">Cor: </label>
+    <input type="color" id="cor">
+
+    <label for="">&emsp;Situação: </label>
+    <select id="situacao">
+        <option value="novo">Novo</option>
+        <option value="usado">Usado</option>
+    </select>
+    <br><br>
+
+    <button onclick="adicionar()">Adicionar</button>
+    <hr>
+
+    <table border="1" width="70%">
+        <thead >
+            <td>ID</td>
+            <td>Modelo</td>
+            <td>Ano</td>
+            <td>Cor</td>
+            <td>Situação</td>
+            <td>Preço</td>
+        </thead>
+
+        <tbody  id="tabela">
+            <td colspan="6">Não existem veículos cadastrados</td>
+        </tbody>
+    </table>
+
+    <p>Valor total dos veículos cadastrados: <span id="valorCarros"></span></p>
+
+    <script src="LOJA E CARROS.js"></script>
+</body>
+</html>
